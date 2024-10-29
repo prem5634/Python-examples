@@ -6,7 +6,7 @@ from datetime import datetime
 
 # Script to fetch the temperature and other info of a city from weather app
 # asking the user for api key
-api_key = input("Please Enter Your API: ")
+api_key = input("Please Enter Your API (number): ")
 
 #asking the user for city name
 city_name = input("Please Enter Your City Name: ")
