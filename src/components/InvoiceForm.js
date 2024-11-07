@@ -30,7 +30,7 @@ class InvoiceForm extends React.Component {
       taxRate: '',
       taxAmmount: '0.00',
       discountRate: '',
-      discountAmmount: '0.00'
+      discountAmount: '0.00'
     };
     this.state.items = [
       {
