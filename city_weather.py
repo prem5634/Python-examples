@@ -10,7 +10,7 @@ def time_from_utc_with_timezone(utc_with_tz):
     return local_time.time()
     
 # asking the user for api key
- api_key = input("Please Enter Your API: ")
+api_key = input("Please Enter Your API: ")
 
 #asking the user for city name
 city_name = input("Please Enter Your City Name: ")
