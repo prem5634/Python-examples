@@ -11,7 +11,7 @@ class App extends Component {
       <Container>
         <InvoiceForm/>
       </Container>
-    </div>
+    </main>
   );
 }}
 
