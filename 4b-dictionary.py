@@ -92,8 +92,10 @@ print(emp_dict[101].get('skills'))
 # None
 print(emp_dict[100].get('mailid'))
 
-# KeyError: 'location' Comment below line to execute other lines below
-# print(emp_dict[101]['location'])
+try:
+    print(emp_dict[101]['location'])
+except KeyError:
+    print("Location not found for employee 101")
 
 # Add one more employee to emp_dict using update()
 new_emp = {
