@@ -3,7 +3,7 @@ import re
 urls = ["https://www.facebook.com","https://www.google.com","https://www.amazon.in"]
 
 def checkValidURL(url):
-    url_reg_ex = "^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?"
+    url_reg_ex = r"^(([^:/?#]+):)?(//([^/?#]*))?([^?#]*)(\?([^#]*))?(#(.*))?"
     data = re.search(url_reg_ex,url)
     if data is not None:
         return True
