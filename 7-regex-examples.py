@@ -15,7 +15,10 @@ def parseDomain(url):
 
 
 if __name__ == "__main__":
-    for url in urls:
-        url_status = checkValidURL(url)
-        if url_status:
-            parseDomain(url)
+   for url in urls:
+       url_status = checkValidURL(url)
+       if url_status:
+            try:
+                parseDomain(url)
+            except Exception as e:
+                print(f"Error parsing domain for {url}: {e}")
