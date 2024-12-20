@@ -14,8 +14,9 @@ try:
 except:
     exit("Make sure ranges are integers only")
 
-if( lower > 0 or upper > 0 ):
-    system.exit("Ranges must be positive numbers")
+import sys
+if(lower < 0 or upper < 0):
+    sys.exit("Ranges must be positive numbers")
 
 print("Prime numbers between", lower, "and", upper, "are:")
 
