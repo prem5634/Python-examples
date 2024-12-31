@@ -98,7 +98,7 @@ except KeyError:
     print("Location not found for employee 101")
 
 # Add one more employee to emp_dict using update()
-new_emp = {
+new_emp = [{
     102:
         {
             'name': "Rakesh",
@@ -109,7 +109,7 @@ new_emp = {
                 'Flexmind Marketing': 'Increase the membership my targeted marketing'
             }
         }
-}
+}]
 
 emp_dict.update(new_emp)
 print(emp_dict)
