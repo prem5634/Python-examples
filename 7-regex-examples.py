@@ -20,5 +20,5 @@ if __name__ == "__main__":
        if url_status:
             try:
                 parseDomain(url)
-            except Exception as e:
-                print(f"Error parsing domain for {url}: {e}")
+            except (ValueError, IndexError) as e:
+           print(f"Error parsing domain for {url}: {e}")
