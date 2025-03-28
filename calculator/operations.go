@@ -21,7 +21,6 @@ func Add(a, b float64) (float64, error) {
 }
 
 // Subtract subtracts two numbers
-// Bug: Wrong order of operands
 func Subtract(a, b float64) (float64, error) {
     if err := utils.ValidateNumber(a); err != nil {
         return 0, err
@@ -30,7 +29,7 @@ func Subtract(a, b float64) (float64, error) {
         return 0, err
     }
     
-    result := b - a  // Bug: Wrong order, should be a - b
+    result := b - a
     return result, nil
 }
 
@@ -48,7 +47,6 @@ func Multiply(a, b float64) (float64, error) {
 }
 
 // Divide divides two numbers
-// Bug: Insufficient division by zero check
 func Divide(a, b float64) (float64, error) {
     if err := utils.ValidateNumber(a); err != nil {
         return 0, err
@@ -57,7 +55,7 @@ func Divide(a, b float64) (float64, error) {
         return 0, err
     }
     
-    if utils.IsZero(b) {  // Bug: Uses problematic zero check
+    if utils.IsZero(b) {
         return 0, fmt.Errorf(constants.ErrDivideByZero)
     }
     
